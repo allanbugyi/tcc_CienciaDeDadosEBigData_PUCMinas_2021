@@ -1,0 +1,81 @@
+List of 11
+ $ mu         :List of 2
+  ..$ mu   : num [1:29, 1] -0.0486 -0.0641 -0.0351 0.1374 -0.02 ...
+  ..$ gamma: NULL
+ $ sigma      : num [1:29, 1:29] 17.7087 0.1496 0.0801 0.2665 0.0311 ...
+ $ beta       :List of 1
+  ..$ logbeta:List of 1
+  .. ..$ : num [1:30, 1:11330] -13.7 -14.4 -13.6 -17.1 -13.1 ...
+ $ settings   :List of 13
+  ..$ dim             :List of 5
+  .. ..$ K      : num 30
+  .. ..$ A      : int 1
+  .. ..$ V      : int 11330
+  .. ..$ N      : int 27599
+  .. ..$ wcounts:List of 2
+  .. .. ..$ Group.1: int [1:11330] 1 2 3 4 5 6 7 8 9 10 ...
+  .. .. ..$ x      : int [1:11330] 11 2 5 2 3 1 2 1 1 1 ...
+  ..$ verbose         : logi TRUE
+  ..$ topicreportevery: num 5
+  ..$ convergence     :List of 3
+  .. ..$ max.em.its        : num 1000
+  .. ..$ em.converge.thresh: num 1e-05
+  .. ..$ allow.neg.change  : logi TRUE
+  ..$ covariates      :List of 4
+  .. ..$ X         : NULL
+  .. ..$ betaindex : num [1:27599] 1 1 1 1 1 1 1 1 1 1 ...
+  .. ..$ yvarlevels: NULL
+  .. ..$ formula   : NULL
+  ..$ gamma           :List of 5
+  .. ..$ mode  : chr "CTM"
+  .. ..$ prior : NULL
+  .. ..$ enet  : num 1
+  .. ..$ ic.k  : num 2
+  .. ..$ maxits: num 1000
+  ..$ sigma           :List of 1
+  .. ..$ prior: num 0
+  ..$ kappa           :List of 5
+  .. ..$ LDAbeta       : logi TRUE
+  .. ..$ interactions  : logi FALSE
+  .. ..$ fixedintercept: logi TRUE
+  .. ..$ mstep         :List of 2
+  .. .. ..$ tol  : num 0.001
+  .. .. ..$ maxit: num 3
+  .. ..$ contrast      : logi FALSE
+  ..$ tau             :List of 7
+  .. ..$ mode            : chr "L1"
+  .. ..$ tol             : num 1e-05
+  .. ..$ enet            : num 1
+  .. ..$ nlambda         : num 250
+  .. ..$ lambda.min.ratio: num 0.001
+  .. ..$ ic.k            : num 2
+  .. ..$ maxit           : num 10000
+  ..$ init            :List of 12
+  .. ..$ mode           : chr "Spectral"
+  .. ..$ nits           : num 50
+  .. ..$ burnin         : num 25
+  .. ..$ alpha          : num 1.67
+  .. ..$ eta            : num 0.01
+  .. ..$ s              : num 0.05
+  .. ..$ p              : num 3000
+  .. ..$ d.group.size   : num 2000
+  .. ..$ recoverEG      : logi TRUE
+  .. ..$ tSNE_init.dims : num 50
+  .. ..$ tSNE_perplexity: num 30
+  .. ..$ maxV           : num 10000
+  ..$ seed            : num 2036875
+  ..$ ngroups         : num 1
+  ..$ call            : language stm(documents = as.dfm(tweets_dtm_reduzida), K = 30, max.em.its = 1000)
+ $ vocab      : chr [1:11330] "️⃣" "️⃣️⃣️⃣️⃣" "   " "    " ...
+ $ convergence:List of 4
+  ..$ bound    : num [1:3] -386206 -369340 -370273
+  ..$ its      : num 3
+  ..$ converged: logi TRUE
+  ..$ stopits  : logi TRUE
+ $ theta      : num [1:27599, 1:30] 0.02706 0.02787 0.00791 0.04991 0.01038 ...
+ $ eta        : num [1:27599, 1:29] -0.161 -0.155 -0.165 0.431 -0.163 ...
+ $ invsigma   : num [1:29, 1:29] 5.65e-02 -4.34e-04 -1.89e-04 -1.02e-03 -4.77e-05 ...
+ $ time       : Named num 85.2
+  ..- attr(*, "names")= chr "elapsed"
+ $ version    : chr "1.3.6"
+ - attr(*, "class")= chr "STM"

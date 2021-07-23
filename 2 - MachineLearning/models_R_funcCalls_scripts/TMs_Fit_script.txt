@@ -1,0 +1,8 @@
+library("tm")
+library("topicmodels")
+k <- 30 
+tweets_TM <- 
+ list( LDA_VEM = LDA(tweets_dtm_reduzida, k = k),
+ LDA_fixedVEM = LDA(tweets_dtm_reduzida, k = k, control = list(estimate.alpha = FALSE)),
+ LDA_Gibbs = LDA(tweets_dtm_reduzida, k = k, method = "Gibbs", control = list(burnin = 1000, thin = 100, iter = 1000)),
+ CTM = CTM(tweets_dtm_reduzida, k = k, control = list(var = list(tol = 10^4), em = list(tol = 10^-3))))

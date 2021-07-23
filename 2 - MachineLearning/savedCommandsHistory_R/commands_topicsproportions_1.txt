@@ -1,0 +1,302 @@
+install.packages("rtweet")
+q()
+library(rtweet)
+library("rtweet")
+library("tm")
+library("topicmodels")
+list_workspaces(subscription_id, resource_group = NULL)
+ls()
+libPaths()
+.libPaths()
+mypaths <- .libPaths()
+mypaths <- c(mypaths, "/usr/local/R/x86_64-pc-linux-gnu-library/4.1")
+mypaths
+.libPaths(mypaths)
+.libPaths()
+library("rtweet")
+detach("package:rtweet")
+load(file = ".RData")
+load(file = "/home/allan/Language-pt_Country-BR_Geo-NO_Original-YES_Likes-0_Retweets-0/full_text/.RData")
+dim(corpus)
+dim(tweets_dtm)
+dim(tweets_tm)
+ls()
+dim(data)
+data
+ls()
+corpus2
+corpus1
+corpus
+dim(data)
+mypaths
+rm mypaths
+rm(mypaths)
+rm mypaths
+mypaths
+print(SEED)
+k
+SEED[
+SEED
+clear()
+clean()
+library("tm")
+data2 <- removeNumbers(data)
+corpus
+data2
+view(data)
+View(data)
+nrow(data)
+ncol(data)
+colnames(data)
+str(data)
+data$full_text
+data2 <- removeNumbers(data$full_text)
+data2
+View(data2)
+data2 <- removePunctuation(data2)
+View(data2)
+inspect(data2)
+data2
+data
+View(data)
+View(data2)
+data2 <- removeWords(data2, stopwords("portuguese"))
+View(data2)
+dim(data2)
+View(data2)
+inspect(data2)
+type(data2)
+type() function R
+typeof(data2)
+data2$0
+data2[0]
+View(data2)
+q()
+setwd("Documentos/profissional/puc_minas/posGraduacao/tcc/dev/tweetsExtraidos&filtrados_Language-pt_Country-BR_Geo-NO_Original-YES_Likes-0_Retweets-0/full_text")
+load("workspace_tcc.RData")
+dim(tweet_dtm_reduzida)
+dim(tweets_dtm_reduzida)
+load("workspace_tcc.RData")
+ls()
+dim(tweets_dtm_reduzida)
+dim(tweets_dtm)
+str(tweets_TM)
+dim(tweets_dtm)
+dim(tweets_dtm)
+dim(tweets_dtm_reduzida)
+library("tm")
+library("slam")
+findMostFreqTerms(tweets_dtm_reduzida, 30, INDEX = rep(1, each=27599))
+dim(tweets_dtm_reduzida)
+tweets_dtm_reduzida <- tweets_dtm[, term_tfidf >= 1.2]
+tweets_dtm_reduzida <- tweets_dtm_reduzida[row_sums(tweets_dtm_reduzida) > 0,]
+summary(col_sums(tweets_dtm_reduzida))
+dim(tweets_dtm_reduzida)
+findMostFreqTerms(tweets_dtm_reduzida, 30, INDEX = rep(1, each=27599))
+save.image("workspace_tcc.RData")
+ls()
+dim(tweets_dtm)
+library("slam")
+summary(col_sums(tweets_dtm))
+inspect(tweets_dtm)
+findMostFreqTerms(tweets_dtm, 30, INDEX = rep(1, each=48817))
+inspect(tweets_dtm_reduzida)
+ 
+ls()
+dim(tweets_dtm)
+save.image("workspace_tcc.RData")
+plot(tweets_TM[["LDA_VEM"]], type = "summary", xlim = c(0, 0.3))
+tweets_TM[["LDA_VEM"]"
+tweets_TM[["LDA_VEM"]]
+str(tweets_TM)
+topics(tweets_TM[["LDA_VEM"]])
+str(tweets_TM)
+?CTM
+?CTM
+?CTM_VEMcontrol
+?CTM
+?"CTM_VEMcontrol"
+tweets_TM[["LDA_VEM"]]$gamma
+tweets_TM[["LDA_VEM"]]["gamma"]
+aux <- tweets_TM[["LDA_VEM"]]
+aux["gamma"]
+str(aux)
+aux$gamma
+typeof(aux)
+aux <- tweets_TM[["LDA_VEM"]]
+aux <- topics(tweets_TM[["LDA_VEM"]])
+aux
+str(aux)
+aux[1]
+typeof(aux)
+aux <- posterior(tweets_TM[["LDA_VEM"]])
+typeof(aux)
+str(aux)
+aux$topics
+sink("xx")
+aux$topics
+sink()
+str(aux)
+library("tidytext")
+library("tidytext")
+tweets_LDA_VEM_gamma <- tidy(tweets_TM[["LDA_VEM"]], matrix = "gamma")
+library("tidytext")
+tweets_LDA_VEM_gamma <- tidy(tweets_TM[["LDA_VEM"]], matrix = "gamma")
+tweets_LDA_VEM_mostProbTopic <- tweets_LDA_VEM_gamma %>%
+group_by(document) %>%
+slice_max(gamma) %>%
+ungroup()
+data(tweets_LDA_VEM_gamma)
+str(tweets_LDA_VEM_gamma)
+tweets_LDA_VEM_mostProbTopic <- tweets_LDA_VEM_gamma %>%
+slice_max(gamma) %>%
+tweets_LDA_VEM_mostProbTopic <- tweets_LDA_VEM_gamma %>%
+slice_max(gamma)
+tweets_LDA_VEM_mostProbTopic <- tweets_LDA_VEM_gamma slice_max(gamma)
+library("magrittr")
+tweets_LDA_VEM_mostProbTopic <- tweets_LDA_VEM_gamma %>%
+slice_max(gamma)
+library("tidetext")
+library("tidytext")
+tweets_LDA_VEM_mostProbTopic <- tweets_LDA_VEM_gamma %>%
+slice_max(gamma)
+library("dplyr")
+tweets_LDA_VEM_mostProbTopic <- tweets_LDA_VEM_gamma %>%
+slice_max(gamma)
+tweets_LDA_VEM_mostProbTopic
+tweets_LDA_VEM_mostProbTopic[2]
+typeof(tweets_LDA_VEM_mostProbTopic[)
+typeof(tweets_LDA_VEM_mostProbTopic)/
+str(tweets_LDA_VEM_mostProbTopic)
+tweets_LDA_VEM_mostProbTopic <- tweets_LDA_VEM_gamma %>%
+group_by(document) %>%
+slice_max(gamma) %>%
+ungroup()
+tweets_LDA_VEM_mostProbTopic
+sink("commands")
+history()
+sink()
+savehistory(file="commands_topicsperdoc")
+ls()
+rm(aux)
+save.image("workspace_tcc.RData")
+?slice_max
+str(tweets_LDA_VEM_mostProbTopic)
+head(tweets_LDA_VEM_mostProbTopic$topic)
+for(i = 0; i<(dim(tweets_LDA_VEM_mostProbTopic$topic); i++){
+for( 0; (dim(tweets_LDA_VEM_mostProbTopic$topic)){
+for(i in 27599){
+if(tweets_LDA_VEM_mostProbTopic$topic[i]==1){
+c(t1 =0, t2 =0)
+for(i in 28){
+c(t3 = 0, t4 =0, t5 =0, t6=0, t7=0, t8=0, t9=0, t10=0, t11=0, t12=0, t13=0, t14=0, t15=0, t16=0, t17=0, t18=0, t19=0, t20=0, t21=0, t22=0, t23=0, t24=0, t25=0,t26=0,t27=0,t28=0,t29=0,t30=0)
+for(i in 27599){
+swtich(i):
+for(i in 2){
+if(i=1){
+}
+if(i=1){
+}
+if(i=1){
+}
+if(i=1){
+}
+if(i=1){
+}
+if(i=1){
+}
+if(i=1){
+}
+if(i=1){
+}
+if(i=1){
+}
+if(i=1){
+}
+if(i=1){
+}
+if(i=1){
+}
+if(i=1){
+}
+if(i=1){
+}
+if(i=1){
+}
+if(i=1){
+}
+if(i=1){
+}
+if(i=1){
+}
+if(i=1){
+}
+if(i=1){
+}
+if(i=1){
+}
+if(i=1){
+}
+if(i=1){
+}
+if(i=1){
+}
+if(i=1){
+}
+if(i=1){
+}
+if(i=1){
+}
+if(i=1){
+}
+if(i=1){
+}
+if(i=1){
+}
+typeof(tweets_LDA_VEM_mostProbTopic$topic)
+typeof(unlist(tweets_LDA_VEM_mostProbTopic$topic))
+hrad(unlist(tweets_LDA_VEM_mostProbTopic$topic))
+head(unlist(tweets_LDA_VEM_mostProbTopic$topic))
+head(tweets_LDA_VEM_mostProbTopic$topic)
+df <- as.data.frame(tweets_LDA_VEM_mostProbTopic$topic)
+str(df)
+count_tp <- count(df, vars = c(1:30))
+head(df[1])
+count_tps <- count(df, vars="tweets_LDA_VEM_mostProbTopic$topic")
+typeof(count_tps)
+str(count_tps)
+head(count_tps)
+count_tps[1]
+count_tps[2]
+count_tps[3]
+dim(count_tps)
+View(df)
+count_tps <- count(df, vars=1)
+count_tps[1]
+count_tps[2]
+count_tps <- count(df, vars="1")
+count_tps[1]
+count_tps[2]
+count_tps <- count(df[,1], vars="tweets_LDA_VEM_mostProbTopic$topic")
+count_tps <- sum(df$tweets_LDA_VEM_mostProbTopic$topic == '1')
+df[1]
+count_tps <- sum(df[1] == '1')
+print(count_tps)
+count_tps <- c(sum(df[1] == '1'), sum(df[2]=='2'))
+count_tps <- c(sum(df[1] == '1'), sum(df[1]=='2'))
+count_tps
+count_tps <- c(sum(df[1] == '1'), sum(df[1]=='2') , sum(df[1]=='3') , sum(df[1]=='4') , sum(df[1]=='5') , sum(df[1]=='6') , sum(df[1]=='7') , sum(df[1]=='8') 
+, sum(df[1]=='9') , sum(df[1]=='10') , sum(df[1]=='11') , sum(df[1]=='12') , sum(df[1]=='13') , sum(df[1]=='14') , sum(df[1]=='15') , sum(df[1]=='16') , sum(df[1]=='17') 
+, sum(df[1]=='18') , sum(df[1]=='19') , sum(df[1]=='20') , sum(df[1]=='21') , sum(df[1]=='22') , sum(df[1]=='23') , sum(df[1]=='24') , sum(df[1]=='25') , sum(df[1]=='26') 
+, sum(df[1]=='27') , sum(df[1]=='28') , sum(df[1]=='29') , sum(df[1]=='30') 
+)
+count_tps
+sum(count_tps[1:30]
+sum(count_tps[1:30])
+?div
+aux <- lapply(count_tps, '/27599')
+aux <- lapply(count_tps, `/27599`)
+aux <- lapply(count_tps, `/`, 27599)
+str(aux)
+aux2 <- sum(aux)
+savehistory(file="commands_topicsproportions")

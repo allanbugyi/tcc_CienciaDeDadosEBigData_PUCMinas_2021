@@ -1,0 +1,420 @@
+install.packages("rtweet")
+q()
+library(rtweet)
+library("rtweet")
+library("tm")
+library("topicmodels")
+list_workspaces(subscription_id, resource_group = NULL)
+ls()
+libPaths()
+.libPaths()
+mypaths <- .libPaths()
+mypaths <- c(mypaths, "/usr/local/R/x86_64-pc-linux-gnu-library/4.1")
+mypaths
+.libPaths(mypaths)
+.libPaths()
+library("rtweet")
+detach("package:rtweet")
+load(file = ".RData")
+load(file = "/home/allan/Language-pt_Country-BR_Geo-NO_Original-YES_Likes-0_Retweets-0/full_text/.RData")
+dim(corpus)
+dim(tweets_dtm)
+dim(tweets_tm)
+ls()
+dim(data)
+data
+ls()
+corpus2
+corpus1
+corpus
+dim(data)
+mypaths
+rm mypaths
+rm(mypaths)
+rm mypaths
+mypaths
+print(SEED)
+k
+SEED[
+SEED
+clear()
+clean()
+library("tm")
+data2 <- removeNumbers(data)
+corpus
+data2
+view(data)
+View(data)
+nrow(data)
+ncol(data)
+colnames(data)
+str(data)
+data$full_text
+data2 <- removeNumbers(data$full_text)
+data2
+View(data2)
+data2 <- removePunctuation(data2)
+View(data2)
+inspect(data2)
+data2
+data
+View(data)
+View(data2)
+data2 <- removeWords(data2, stopwords("portuguese"))
+View(data2)
+dim(data2)
+View(data2)
+inspect(data2)
+type(data2)
+type() function R
+typeof(data2)
+data2$0
+data2[0]
+View(data2)
+q()
+setwd("Documentos/profissional/puc_minas/posGraduacao/tcc/dev/tweetsExtraidos&filtrados_Language-pt_Country-BR_Geo-NO_Original-YES_Likes-0_Retweets-0")
+plot(tweets_TM[["LDA_VEM"]], type = "summary", xlim = c(0, 0.3))
+load("workspace_tcc.RData")
+plot(tweets_TM[["LDA_VEM"]], type = "summary", xlim = c(0, 0.3))
+?plot
+ls()
+topicProp_LDA_VEM <- read.csv("visualicoes/topicsProportions_LDA_VEM.csv")
+getwd()
+topicProp_LDA_VEM <- read.csv("/visualicoes/topicsProportions_LDA_VEM.csv")
+setwd(getwd()+ "/visualizacoes")
+setwd("Documentos/profissional/puc_minas/posGraduacao/tcc/dev/tweetsExtraidos&filtrados_Language-pt_Country-BR_Geo-NO_Original-YES_Likes-0_Retweets-0/visualizacoes")
+topicProp_LDA_VEM <- read.csv("topicsProportions_LDA_VEM.csv")
+plot(, topicsProp_LDA_VEM, xtx)
+plot(, topicProp_LDA_VEM, xtx)
+plot(topicProp_LDA_VEM)
+?plot
+?plot
+plot(topicProp_LDA_VEM, type="summary")
+typeof(topicProp_LDA_VEM)
+str(topicProp_LDA_VEM)
+aux <- unlist(topicProp_LDA_VEM)
+atr(aux)
+str(aux)
+aux$X
+aux$x
+aux[1]
+aux[2]
+View(aux)
+rm(aux)
+View(topicProp_LDA_VEM)
+topicProp_LDA_VEM[1]
+topicProp_LDA_VEM[2]
+topicProp_LDA_VEM[[1]]
+plot(topicProp_LDA_VEM, labels=topicProp_LDA_VEM[[1]])
+plot(topicProp_LDA_VEM, labels=c(1:30))
+plot(topicProp_LDA_VEM)
+plot(topicProp_LDA_VEM, labels=c("1","2"))
+plot(topicProp_LDA_VEM, labels=topicProp_LDA_VEM)
+typeof(topicProp_LDA_VEM)
+df <- as.data.frame(topicProp_LDA_VEM)
+df
+df$X
+for(i in 30){ append(myvec, "Topic$i")
+}
+myvec <- c()
+for(i in 30){ append(myvec, "Topic$i")
+}
+myvec
+for(i in 30){ print("Topic$i")}
+for(i in 1:30){ print("Topic$i")}
+for(i in 1:30){ print("Topic"+i)}
+for(i in 1:30){ print("Topic"+$i)}
+?paste
+?paste0
+for(i in 1:30){ print(paste("Topic", i))}
+for(i in 1:30){ append(myvex, paste("Topic", i))}
+for(i in 1:30){ append(myvec, paste("Topic", i))}
+myvec
+for(i in 1:30){ myvec <- append(myvec, paste("Topic", i))}
+myvec
+savehistory("commandsvisualization_topicsprops")
+df
+df$X
+typeof(df$X)
+df$topics = myvec
+topicProp_LDA_VEM <- read.csv("topicsProportions_LDA_VEM.csv", headers=FALSE)
+?read.csv
+topicProp_LDA_VEM <- read.csv("topicsProportions_LDA_VEM.csv", header=FALSE)
+topicProp_LDA_VEM
+typeof(topicProp_LDA_VEM)
+df <- as.data.frame(topicProp_LDA_VEM)
+df
+df$topics = myvec
+df
+df$V1
+plot(df$V1, labels=df$topics)
+df$V1
+barplot(df$V1, xlab=df$topics)
+barplot(df$V1, ylab=df$topics)
+barplot(y = df$V1, labels=df$topics)
+?hist
+?barplot
+barplot(y = df$V1, labels=df$topics, horix=TRUE)
+barplot(df$V1, labels=df$topics, horix=TRUE)
+barplot(df$V1, labels=df$topics, horiZ=TRUE)
+barplot(df$V1, labels=df$topics, horiz=TRUE)
+?barplot
+barplot(df$V1, names.arg=df$topics, horiz=TRUE)
+barplot(df$V1, names.arg=df$topics, horiz=TRUE)
+df
+?axis
+barplot(df$V1, names.arg=df$topics, horiz=TRUE)
+axis(side = 4, at = seq_along(df$V1) + 0.5, labels = df$topics, las = 2)
+barplot(df$V1, names.arg=df$topics, horiz=TRUE)
+axis(side = 4, at = seq_along(df$V1) + 0.5, labels = df$topics, las = 2)
+barplot(df$V1, names.arg=df$topics, horiz=TRUE)
+axis(side = 4, at = seq_along(df$V1) + 0.5, labels = df$topics, las = 2)
+barplot(df$V1, names.arg=df$topics, horiz=TRUE, xlim=0.5)
+?barplot
+barplot(df$V1, names.arg=df$topics, horiz=TRUE, xlim="0.5")
+barplot(df$V1, horiz=TRUE)
+barplot(df$V1, horiz=TRUE)
+axis(side = 4, at = seq_along(df$V1) + 0.5, labels = df$topics, las = 2)
+?barplot
+barplot(df$V1, horiz=TRUE, xlim=TRUE)
+?XLIM
+?xlim
+barplot(df$V1, horiz=TRUE, xlim=c(0, 0.5))
+barplot(df$V1, horiz=TRUE, xlim=c(0, 0.05))
+barplot(df$V1, horiz=TRUE, xlim=c(0, 0.04))
+?barplot
+?col
+?barplot
+?barplot$col
+?barplot.col
+barplot(df$V1, horiz=TRUE, xlim=c(0, 0.04), col="white")
+?barplot
+barplot(df$V1, horiz=TRUE, xlim=c(0, 0.04), col="white", height = 0)
+barplot(df$V1, horiz=TRUE, xlim=c(0, 0.04), col="white", height = 0.2)
+barplot(df$V1, horiz=TRUE, xlim=c(0, 0.04), col="white", height = 5)
+?barplot
+barplot(df$V1, horiz=TRUE, xlim=c(0, 0.04), col="white", width = 0)
+barplot(df$V1, horiz=TRUE, xlim=c(0, 0.04), col="white", width = 2)
+?rep
+myaux <- rep(1, each = 3)
+myaux
+?findMostFreqTerms
+barplot(df$V1, horiz=TRUE, xlim=c(0, 0.04), col="white", width = 0.2)
+barplot(df$V1, horiz=TRUE, xlim=c(0, 0.04), col="white", width = 0.01)
+barplot(df$V1, horiz=TRUE, xlim=c(0, 0.04), col="white", width = 0)
+barplot(df$V1, horiz=TRUE, xlim=c(0, 0.04), col="white", width = 0.00000002)
+barplot(df$V1, horiz=TRUE, xlim=c(0, 0.04), col="white", width = 0.000000000000000000000000000001)
+?barplot
+barplot(df$V1, horiz=TRUE, xlim=c(0, 0.04), col="white", beside = TRUE)
+barplot(df$V1, horiz=TRUE, xlim=c(0, 0.04), col="white")
+?barplot
+barplot(df$V1, horiz=TRUE, xlim=c(0, 0.04), col="white", border = NA)
+?barplot
+barplot(df$V1, horiz=TRUE, xlim=c(0, 0.04), col="white", width = 0.01)
+barplot(df$V1, horiz=TRUE, xlim=c(0, 0.04), col="white", width = 0.01, names.arg=df$topics, las=4)
+barplot(df$V1, horiz=TRUE, xlim=c(0, 0.04), col="white", width = 0.01, names.arg=df$topics, las=2)
+?las
+?barplot
+barplot(df$V1, horiz=TRUE, xlim=c(0, 0.04), col="white", width = 0.01, names.arg=df$topics, las=1)
+barplot(df$V1, horiz=TRUE, xlim=c(0, 0.04), col="white", width = 0.01, names.arg=df$topics, las=3)
+plot(df$V1, horiz=TRUE, xlim=c(0, 0.04), col="white", width = 0.01, names.arg=df$topics, las=3)
+plot(df$V1, horiz=TRUE, xlim=c(0, 0.04), col="white", width = 0.01, names.arg=df$topics)
+plot(df$V1, horiz=TRUE, xlim=c(0, 0.04), col="white", width = 0.01, names.arg=df$topics)
+barplot(df$V1, horiz=TRUE, xlim=c(0, 0.04), col="white", width = 0.01, names.arg=df$topics)
+barplot(df$V1, horiz=TRUE, xlim=c(0, 0.04), col="white", width = 0.01, names.arg=df$topics, las=1)
+barplot(df$V1, horiz=TRUE, xlim=c(0, 0.04), col="white", width = 0.01, names.arg=df$topics, ras=1)
+?bar$las
+barplot(df$V1, horiz=TRUE, xlim=c(0, 0.04), col="white", width = 0.01, names.arg=df$topics, las=1)
+barplot(df$V1, horiz=TRUE, xlim=c(0, 0.04), col="white", width = 0.01, names.arg=df$topics, las=2)
+barplot(df$V1, horiz=TRUE, xlim=c(0, 0.04), col="white", width = 0.01, names.arg=df$topics)
+barplot(df$V1, horiz=TRUE, xlim=c(0, 0.04), col="white", width = 0.01, names.arg=df$topics, las=1)
+savehistory(file="commandsvisualization_topicsprops2")
+barplot(df$V1, horiz=TRUE, xlim=c(0, 0.04), col="white", width = 0.01, names.arg=df$topics, las=1)
+axis(side = 4, labels = df$topics, las = 2)
+?axis
+barplot(df$V1, horiz=TRUE, xlim=c(0, 0.04), col="white", width = 0.01, names.arg=df$topics, las=1)
+axis(side = 4, at = seq_along(df$V1) + 0.5, labels = df$topics, las = 2)
+axis(side = 3, at = seq_along(df$V1) + 0.5, labels = df$topics, las = 2)
+barplot(df$V1, horiz=TRUE, xlim=c(0, 0.04), col="grey", width = 0.01, names.arg=df$topics, las=1)
+?sort
+?sort
+barplot(sort(df$V1, decresing = TRUE), horiz=TRUE, xlim=c(0, 0.04), col="grey", width = 0.01, names.arg=df$topics, las=1)
+?sort
+barplot(sort(df$V1, decreasing = TRUE), horiz=TRUE, xlim=c(0, 0.04), col="grey", width = 0.01, names.arg=df$topics, las=1)
+barplot(df$V1, horiz=TRUE, xlim=c(0, 0.04), col="grey", width = 0.01, names.arg=df$topics, las=1)
+barplot(sort(df$V1, decreasing = TRUE), horiz=TRUE, xlim=c(0, 0.04), col="grey", width = 0.01, names.arg=df$topics, las=1)
+barplot(sort(df$V1, decreasing = FALSE), horiz=TRUE, xlim=c(0, 0.04), col="grey", width = 0.01, names.arg=df$topics, las=1)
+savehistory(file="commandsvisualization_topicsprops2")
+?barplot
+barplot(sort(df$V1, decreasing = FALSE), horiz=TRUE, xlim=c(0, 0.04), col=rainbow(20)", width = 0.01, names.arg=df$topics, las=1)
+barplot(sort(df$V1, decreasing = FALSE), horiz=TRUE, xlim=c(0, 0.04), col=rainbow(20), width = 0.01, names.arg=df$topics, las=1)
+barplot(sort(df$V1, decreasing = FALSE), horiz=TRUE, xlim=c(0, 0.04), col=rainbow(30), width = 0.01, names.arg=df$topics, las=1)
+barplot(sort(df$V1, decreasing = FALSE), horiz=TRUE, xlim=c(0, 0.04), col=rainbow(40), width = 0.01, names.arg=df$topics, las=1)
+barplot(sort(df$V1, decreasing = FALSE), horiz=TRUE, xlim=c(0, 0.04), col=rainbow(60), width = 0.01, names.arg=df$topics, las=1)
+barplot(sort(df$V1, decreasing = FALSE), horiz=TRUE, xlim=c(0, 0.04), col=rainbow(50), width = 0.01, names.arg=df$topics, las=1)
+barplot(sort(df$V1, decreasing = FALSE), horiz=TRUE, xlim=c(0, 0.04), col=rainbow(90), width = 0.01, names.arg=df$topics, las=1)
+barplot(sort(df$V1, decreasing = FALSE), horiz=TRUE, xlim=c(0, 0.04), col=rainbow(100), width = 0.01, names.arg=df$topics, las=1)
+barplot(sort(df$V1, decreasing = FALSE), horiz=TRUE, xlim=c(0, 0.04), col=rainbow(500), width = 0.01, names.arg=df$topics, las=1)
+barplot(sort(df$V1, decreasing = FALSE), horiz=TRUE, xlim=c(0, 0.04), col=rainbow(5), width = 0.01, names.arg=df$topics, las=1)
+barplot(sort(df$V1, decreasing = FALSE), horiz=TRUE, xlim=c(0, 0.04), col=rainbow(2), width = 0.01, names.arg=df$topics, las=1)
+barplot(sort(df$V1, decreasing = FALSE), horiz=TRUE, xlim=c(0, 0.04), col=palette("black"), width = 0.01, names.arg=df$topics, las=1)
+barplot(sort(df$V1, decreasing = FALSE), horiz=TRUE, xlim=c(0, 0.04), col=palette("black", "blue"), width = 0.01, names.arg=df$topics, las=1)
+?palette
+palette.pals()
+palette("Classic Tableau")
+barplot(sort(df$V1, decreasing = FALSE), horiz=TRUE, xlim=c(0, 0.04), col=palette("black", "blue"), width = 0.01, names.arg=df$topics, las=1)
+barplot(sort(df$V1, decreasing = FALSE), horiz=TRUE, xlim=c(0, 0.04), col=palette("Classic Tableau"), width = 0.01, names.arg=df$topics, las=1)
+barplot(sort(df$V1, decreasing = FALSE), horiz=TRUE, xlim=c(0, 0.04), col=colorRampPalette(c("black", "white")), width = 0.01, names.arg=df$topics, las=1)
+barplot(sort(df$V1, decreasing = FALSE), horiz=TRUE, xlim=c(0, 0.04), col=colorRampPalette(c("black", "white")), width = 0.01, names.arg=df$topics, las=1)
+colorFunc <- colorRampPalette(c("black", "white"))
+barplot(sort(df$V1, decreasing = FALSE), horiz=TRUE, xlim=c(0, 0.04), col=colorFunc[30], width = 0.01, names.arg=df$topics, las=1)
+barplot(sort(df$V1, decreasing = FALSE), horiz=TRUE, xlim=c(0, 0.04), col=colorFunc(30), width = 0.01, names.arg=df$topics, las=1)
+savehistory(file="commandsvisualization_topicsprops3")
+barplot(sort(df$V1, decreasing = FALSE), horiz=TRUE, xlim=c(0, 0.04), col=colorFunc(30:1), width = 0.01, names.arg=df$topics, las=1)
+colorFunc <- colorRampPalette(c("white", "black"))
+barplot(sort(df$V1, decreasing = FALSE), horiz=TRUE, xlim=c(0, 0.04), col=colorFunc(30), width = 0.01, names.arg=df$topics, las=1)
+barplot(sort(df$V1, decreasing = FALSE), horiz=TRUE, xlim=c(0, 0.07), col=colorFunc(30), width = 0.01, names.arg=df$topics, las=1)
+df_sorted <- sort(df$V1, decreasing = FALSE)
+df
+df_sorted
+df_sorted <- sort(df, decreasing = FALSE)
+View(df_sorted)
+df_sorted <- df[order[df$V1]]
+df_sorted <- df[order[df$V1],]
+df_sorted <- df[order(df$V1)]
+df_sorted <- df[order(df$V1),]
+df_sorted
+df_sorted <- df[,order(df$V1)]
+df_sorted <- df[order(-df$V1),]
+df_sorted
+barplot(df_sorted$v1, horiz=TRUE, xlim=c(0, 0.04), col=colorFunc(30), width = 0.01, names.arg=df_sorted$topics, las=1)
+barplot(df_sorted$V1, horiz=TRUE, xlim=c(0, 0.04), col=colorFunc(30), width = 0.01, names.arg=df_sorted$topics, las=1)
+df_sorted <- df[order(df$V1),]
+barplot(df_sorted$V1, horiz=TRUE, xlim=c(0, 0.04), col=colorFunc(30), width = 0.01, names.arg=df_sorted$topics, las=1)
+png("LDA_VEM_topic_proportions.png")
+barplot(df_sorted$V1, horiz=TRUE, xlim=c(0, 0.04), col=colorFunc(30), width = 0.01, names.arg=df_sorted$topics, las=1)
+png()
+dev.off()
+getwd()
+png("LDA_VEM_topic_proportions.png")
+barplot(df_sorted$V1, horiz=TRUE, xlim=c(0, 0.04), col=colorFunc(30), width = 0.01, names.arg=df_sorted$topics, las=1)
+dev.off()
+png("LDA_VEM_topic_proportions.png", height=600 width=600)
+png("LDA_VEM_topic_proportions.png", height=600, width=600)
+barplot(df_sorted$V1, horiz=TRUE, xlim=c(0, 0.04), col=colorFunc(30), width = 0.01, names.arg=df_sorted$topics, las=1)
+dev.off()
+df
+df_sorted
+ls()
+LDA_VEM_topic_proportions <- df_sorted
+savehistory(file="commandsvisualization_topicsprops4")
+save.image("workspace_tcc.RData")
+barplot(df_sorted$V1, horiz=TRUE, xlim=c(0, 0.04), col=colorFunc(30), width = 0.01, names.arg=df_sorted$topics, las=4)
+barplot(df_sorted$V1, horiz=TRUE, xlim=c(0, 0.04), col=colorFunc(30), width = 0.01, names.arg=df_sorted$topics, las=3)
+barplot(df_sorted$V1, horiz=TRUE, xlim=c(0, 0.04), col=colorFunc(30), width = 0.01, names.arg=df_sorted$topics, las=3)
+barplot(df_sorted$V1, horiz=TRUE, xlim=c(0, 0.04), col=colorFunc(30), width = 0.01, names.arg=df_sorted$topics, las=2)
+barplot(df_sorted$V1, horiz=TRUE, xlim=c(0, 0.04), col=colorFunc(30), width = 0.01, names.arg=df_sorted$topics, las=1)
+barplot(df_sorted$V1, horiz=TRUE, xlim=c(0, 0.06), col=colorFunc(30), width = 0.01, names.arg=df_sorted$topics, las=1)
+barplot(df_sorted$V1, horiz=TRUE, xlim=c(0, 0.045), col=colorFunc(30), width = 0.01, names.arg=df_sorted$topics, las=1)
+barplot(df_sorted$V1, horiz=TRUE, xlim=c(0, 0.05), col=colorFunc(30), width = 0.01, names.arg=df_sorted$topics, las=1)
+dim(tweets_dtm_reduzida)
+barplot(df_sorted$V1, horiz=TRUE, xlim=c(0, 0.05), col=colorFunc(30), width = 0.01, names.arg=df_sorted$topics, las=1, main="LDA (VEM) proporções de tópicos", xlabel="Proporção para 27599 tweets selecionados")
+?barplot
+barplot(df_sorted$V1, horiz=TRUE, xlim=c(0, 0.05), col=colorFunc(30), width = 0.01, names.arg=df_sorted$topics, las=1, main="LDA (VEM) proporções de tópicos", xlab="Proporção para 27599 tweets selecionados")
+?barplot
+barplot(df_sorted$V1, horiz=TRUE, xlim=c(0, 0.05), col=colorFunc(30), width = 0.01, names.arg=df_sorted$topics, las=1, main="LDA (VEM) proporções de tópicos", xlab="Proporção para 27599 tweets selecionados", cex.axes=1.5)
+barplot(df_sorted$V1, horiz=TRUE, xlim=c(0, 0.05), col=colorFunc(30), width = 0.01, names.arg=df_sorted$topics, las=1, main="LDA (VEM) proporções de tópicos", xlab="Proporção para 27599 tweets selecionados", cex.axis=1.5)
+barplot(df_sorted$V1, horiz=TRUE, xlim=c(0, 0.05), col=colorFunc(30), width = 0.01, names.arg=df_sorted$topics, las=1, main="LDA (VEM) proporções de tópicos", xlab="Proporção para 27599 tweets selecionados", cex.axis=2)
+?barplot
+barplot(df_sorted$V1, horiz=TRUE, xlim=c(0, 0.05), col=colorFunc(30), width = 0.01, names.arg=df_sorted$topics, las=1, main="LDA (VEM) proporções de tópicos", xlab="Proporção para 27599 tweets selecionados", cex.axis=2, cex.names=2)
+barplot(df_sorted$V1, horiz=TRUE, xlim=c(0, 0.05), col=colorFunc(30), width = 0.01, names.arg=df_sorted$topics, las=1, main="LDA (VEM) proporções de tópicos", xlab="Proporção para 27599 tweets selecionados", cex.axis=2)
+?barplot
+?mtwxt
+?mtext
+barplot(df_sorted$V1, horiz=TRUE, xlim=c(0, 0.05), col=colorFunc(30), width = 0.01, names.arg=df_sorted$topics, las=1, main="LDA (VEM) proporções de tópicos", xlab="Proporção para 27599 tweets selecionados")
+mtext(4, text = df_sorted$topics)
+mtext(4, text = df_sorted$topics, las =1)
+mtext(4, text = df_sorted$topics, las =1, line =2)
+barplot(df_sorted$V1, horiz=TRUE, xlim=c(0, 0.05), col=colorFunc(30), width = 0.01, names.arg=df_sorted$topics, las=1, main="LDA (VEM) proporções de tópicos", xlab="Proporção para 27599 tweets selecionados")
+mtext(4, text = df_sorted$topics, las =1, line =2)
+barplot(df_sorted$V1, horiz=TRUE, xlim=c(0, 0.05), col=colorFunc(30), width = 0.01, axis.lty=1, las=1, main="LDA (VEM) proporções de tópicos", xlab="Proporção para 27599 tweets selecionados")
+barplot(df_sorted$V1, horiz=TRUE, xlim=c(0, 0.05), col=colorFunc(30), width = 0.01, axis.lty=2, las=1, main="LDA (VEM) proporções de tópicos", xlab="Proporção para 27599 tweets selecionados")
+barplot(df_sorted$V1, horiz=TRUE, xlim=c(0, 0.05), col=colorFunc(30), width = 0.01, axis.lty=3, las=1, main="LDA (VEM) proporções de tópicos", xlab="Proporção para 27599 tweets selecionados")
+barplot(df_sorted$V1, horiz=TRUE, xlim=c(0, 0.05), col=colorFunc(30), width = 0.01, axis.lty=1, las=1, main="LDA (VEM) proporções de tópicos", xlab="Proporção para 27599 tweets selecionados")
+mtext(4, text = df_sorted$topics, las =1, line =2)
+mtext(4, text = df_sorted$topics)
+mtext(4, text = df_sorted$topics, las =1)
+barplot(df_sorted$V1, horiz=TRUE, xlim=c(0, 0.05), col=colorFunc(30), width = 0.01, axis.lty=1, las=1, main="LDA (VEM) proporções de tópicos", xlab="Proporção para 27599 tweets selecionados")
+mtext(4, text = df_sorted$topics, las =1)
+?mtext
+barplot(df_sorted$V1, horiz=TRUE, xlim=c(0, 0.05), col=colorFunc(30), width = 0.01, beside=TRUE, las=1, main="LDA (VEM) proporções de tópicos", xlab="Proporção para 27599 tweets selecionados")
+axis(side = 4, at = seq_along(df_sorted$V1) + 0.5, labels = df_sorted$topics, las = 2)
+mtext(4, text = df_sorted$topics, las =1)
+barplot(df_sorted$V1, horiz=TRUE, xlim=c(0, 0.05), col=colorFunc(30), width = 0.01, beside=TRUE, las=1, main="LDA (VEM) proporções de tópicos", xlab="Proporção para 27599 tweets selecionados")
+axis(side = 2, at = seq_along(df_sorted$V1) + 0.5, labels = df_sorted$topics, las = 2)
+axis(side = 2, at = seq_along(df_sorted$V1) + 0.5, labels = df_sorted$topics, las = 1)
+axis(side = 3, at = seq_along(df_sorted$V1) + 0.5, labels = df_sorted$topics, las = 2)
+axis(side = 1, at = seq_along(df_sorted$V1) + 0.5, labels = df_sorted$topics, las = 2)
+mtext(4, text = "text", las =2)
+head(df_sorted$topics)
+head(df_sorted$V1)
+barplot(df_sorted$V1, horiz=TRUE, xlim=c(0, 0.05), col=colorFunc(30), width = 0.01, beside=TRUE, las=1, main="LDA (VEM) proporções de tópicos", xlab="Proporção para 27599 tweets selecionados")
+axis(side = 1, at = seq_along(df_sorted$V1) + 0.5, labels = df_sorted$topics, las = 2)
+mtext(4, text = "text", las =2)
+barplot(df_sorted$V1, horiz=TRUE, xlim=c(0, 0.05), col=colorFunc(30), width = 0.01, names.arg=df_sorted$topics, las=1, main="LDA (VEM) proporções de tópicos", xlab="Proporção para 27599 tweets selecionados")
+png("LDA_VEM_topic_proportions.png", height=600, width=600)
+barplot(df_sorted$V1, horiz=TRUE, xlim=c(0, 0.05), col=colorFunc(30), width = 0.01, names.arg=df_sorted$topics, las=1, main="LDA (VEM) proporções de tópicos", xlab="Proporção para 27599 tweets selecionados")
+dev.off()
+savehistory(file="commandsvisualization_topicsprops5")
+library("tidytext")
+library("dplyr")
+library("magrittr")
+library("tm")
+library("slam")
+tweets_LDA_fixedVEM_mostProbTopic <- tweets_LDA_VEM_gamma %>%
+tweets_LDA_fixedVEM_gamma <- tidy(tweets_TM[["LDA_fixedVEM"]], matrix = "gamma")
+tweets_LDA_fixedVEM_mostProbTopic <- tweets_LDA_fixedVEM_gamma %>%
+slice_max(gamma) %>%
+
+
+tweets_LDA_fixedVEM_gamma <- tidy(tweets_TM[["LDA_fixedVEM"]], matrix = "gamma")
+tweets_LDA_fixedVEM_mostProbTopic <- tweets_LDA_fixedVEM_gamma %>%
+group_by(document) %>%
+slice_max(gamma) %>%
+ungroup()
+ls()
+save.image("workspace_tcc.RData")
+df <- as.data.frame(tweets_LDA_fixedVEM_mostProbTopic$topic)
+count_tps <- c(sum(df[1] == '1'), sum(df[1]=='2') , sum(df[1]=='3') , sum(df[1]=='4') , sum(df[1]=='5') , sum(df[1]=='6') , sum(df[1]=='7') , sum(df[1]=='8') 
+, sum(df[1]=='9') , sum(df[1]=='10') , sum(df[1]=='11') , sum(df[1]=='12') , sum(df[1]=='13') , sum(df[1]=='14') , sum(df[1]=='15') , sum(df[1]=='16') , sum(df[1]=='17') 
+, sum(df[1]=='18') , sum(df[1]=='19') , sum(df[1]=='20') , sum(df[1]=='21') , sum(df[1]=='22') , sum(df[1]=='23') , sum(df[1]=='24') , sum(df[1]=='25') , sum(df[1]=='26') 
+, sum(df[1]=='27') , sum(df[1]=='28') , sum(df[1]=='29') , sum(df[1]=='30') 
+)
+sum(count_tps[1:30])
+topicsProps <- lapply(count_tps, `/`, 27599)
+sum(topicsProps)
+savehistory(file="commandsTopicProportions_mostUpdated")
+count_tps[1]
+count_tps[2]
+aux <- vapply(count_tps, `/`, 27599)
+ls()
+rm(myaux)
+aux <- as.data.frame(count_tps)
+aux
+aux <- as.data.frame(topicsProps)
+aux
+aux[1]
+aux <- as.data.frame(unlist(topicsProps))
+aux
+rep(1, each=(30))
+rep(2, each=(30))
+rep(1:2, each=(30))
+?rep
+myvec
+df <- aux
+rm(aux)
+df
+df$topics = myvec
+df
+savehistory(file="commandsTopicProportions_mostUpdated")
+savehistory(file="commandsTopicProportions_mostUpdated")

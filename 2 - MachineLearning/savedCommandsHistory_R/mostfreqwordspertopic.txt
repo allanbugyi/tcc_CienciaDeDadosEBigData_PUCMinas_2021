@@ -1,0 +1,88 @@
+ stmbeta <- tidy(tweets_STM_TM, "beta")
+ ctmbeta <- tidy(tweets_TMs[["CTM"]], "beta")
+ ldaVEMbeta <- tidy(tweets_TMs[["LDA_VEM"]], "beta")
+ ldaFixedVEMbeta <- tidy(tweets_TMs[["LDA_fixedVEM"]], "beta")
+ ldaGibbsbeta <- tidy(tweets_TMs[["LDA_Gibbs"]], "beta")
+ 
+ stmbeta_df<- as.data.frame(stmbeta)
+> stmbeta_df <- stmbeta_df[order(stmbeta_df$beta),]
+> stmbeta_df <- stmbeta_df[order(-stmbeta_df$beta),]
+> stm_freqWords_perTopic <- stmbeta_df %>%
++ group_by(topic) %>%
++ slice_head(n = 5) %>%
++ ungroup()
+> stm_freqWords_perTopic
+# A tibble: 150 x 3
+   topic term        beta
+   <int> <chr>      <dbl>
+ 1     1 inacredit 0.0593
+ 2     1 bizarr    0.0216
+ 3     1 rind      0.0211
+ 4     1 resum     0.0210
+ 5     1 surreal   0.0209
+ 6     2 céu       0.0707
+ 7     2 papa      0.0335
+ 8     2 fum       0.0283
+ 9     2 maravilh  0.0259
+10     2 mentir    0.0213
+# … with 140 more rows
+> 
+> ladVEMbeta_df <- as.data.frame(ldaVEMbeta)
+> ldaVEMbeta_df <- ldaVEMbeta_df[order(-ldaVEMbeta_df$beta),]
+Erro: objeto 'ldaVEMbeta_df' não encontrado
+> ldaVEMbeta_df <- as.data.frame(ldaVEMbeta)
+> ldaVEMbeta_df <- ldaVEMbeta_df[order(-ldaVEMbeta_df$beta),]
+> ldaVEM_freqWords_perTopic <- ldaVEMbeta_df %>%
++ group_by(topic) %>%
++ slice_head(n = 5) %>%
++ ungroup()
+
+ldaFixedVEMbeta_df <- as.data.frame(ldaFixedVEMbeta)
+> ldaFixedVEMbeta_df <- ldaFixedVEMbeta_df[order(-ldaFixedVEMbeta_df$beta),]
+> ldaFixedVEM_freqWords_perTopic <- ldaFixedVEMbeta_df %>%
++ group_by(topic) %>%
++ slice_head(n = 5) %>%
++ ungroup()
+> 
+> ldaGibbsbeta_df <- as.data.frame(ldaGibbsbeta)
+> ldaGibbsbeta_df <- ldaGibbsbeta_df[order(-ldaGibbsbeta_df$beta),]
+> ldaGibbs_freqWords_perTopic <- ldaGibbsbeta_df %>%
++ group_by(topic) %>%
++ slice_head(n = 5) %>%
++ ungroup()
+
+test <- as.data.frame(ldaVEM_freqWords_perTopic)
+> test <- as.table(test)
+Error in as.table.default(test) : cannot coerce to a table
+> sink("teste")
+> test
+> sink()
+> sink("ldaFixedVEM_freqWords_perTopic.txt")
+> ldaFixedVEM_freqWords_perTopic
+> sink()
+> sink("ctm_freqWords_perTopic.txt")
+> ctm_freqWords_perTopic
+> sink()
+> sink("ldaGibbs_freqWords_perTopic.txt")
+> ldaGibbs_freqWords_perTopic
+> sink()
+> sink("stm_freqWords_perTopic.txt")
+> stm_freqWords_perTopic
+> sink()
+> aux <- as.data.frame(ldaFixedVEM_freqWords_perTopic)
+> sink("ldaFixedVEM_freqWords_perTopic.txt")
+> aux
+> sink()
+> aux <- as.data.frame(ctm_freqWords_perTopic)
+> sink("ctm_freqWords_perTopic.txt")
+> aux
+> sink()
+> aux <- as.data.frame(ldaGibbs_freqWords_perTopic)
+> sink("ldaGibbs_freqWords_perTopic.txt")
+> aux
+> sink()
+> aux <- as.data.frame(stm_freqWords_perTopic)
+> sink("stm_freqWords_perTopic.txt")
+> aux
+> sink()
+

@@ -1,0 +1,6 @@
+library("tm")
+library("stm")
+library("quanteda")
+k <- 30
+tweets_STM_TM <- stm(documents = as.dfm(tweets_dtm_reduzida),
+ K = k, max.em.its = 1000)

@@ -1,0 +1,156 @@
+List of 4
+ $ LDA_VEM     :Formal class 'LDA_VEM' [package "topicmodels"] with 14 slots
+  .. ..@ alpha          : num 3.5
+  .. ..@ call           : language LDA(x = tweets_dtm_reduzida, k = k)
+  .. ..@ Dim            : int [1:2] 27599 11330
+  .. ..@ control        :Formal class 'LDA_VEMcontrol' [package "topicmodels"] with 13 slots
+  .. .. .. ..@ estimate.alpha: logi TRUE
+  .. .. .. ..@ alpha         : num 1.67
+  .. .. .. ..@ seed          : int 1626229268
+  .. .. .. ..@ verbose       : int 0
+  .. .. .. ..@ prefix        : chr "/tmp/RtmpdJoNsW/file372978ae9a02"
+  .. .. .. ..@ save          : int 0
+  .. .. .. ..@ nstart        : int 1
+  .. .. .. ..@ best          : logi TRUE
+  .. .. .. ..@ keep          : int 0
+  .. .. .. ..@ estimate.beta : logi TRUE
+  .. .. .. ..@ var           :Formal class 'OPTcontrol' [package "topicmodels"] with 2 slots
+  .. .. .. .. .. ..@ iter.max: int 500
+  .. .. .. .. .. ..@ tol     : num 1e-06
+  .. .. .. ..@ em            :Formal class 'OPTcontrol' [package "topicmodels"] with 2 slots
+  .. .. .. .. .. ..@ iter.max: int 1000
+  .. .. .. .. .. ..@ tol     : num 1e-04
+  .. .. .. ..@ initialize    : chr "random"
+  .. ..@ k              : int 30
+  .. ..@ terms          : chr [1:11330] "httpstcozagilndvlt" "mata👇" "bost" "musiqu" ...
+  .. ..@ documents      : chr [1:27599] "text1" "text2" "text3" "text6" ...
+  .. ..@ beta           : num [1:30, 1:11330] -38 -37.2 -39.3 -38.6 -40 ...
+  .. ..@ gamma          : num [1:27599, 1:30] 0.0327 0.0327 0.033 0.033 0.0425 ...
+  .. ..@ wordassignments:List of 5
+  .. .. ..$ i   : int [1:44407] 1 1 2 2 3 4 5 6 7 8 ...
+  .. .. ..$ j   : int [1:44407] 1 2 3 4 5 6 7 8 9 10 ...
+  .. .. ..$ v   : num [1:44407] 13 13 6 28 4 23 1 25 27 28 ...
+  .. .. ..$ nrow: int 27599
+  .. .. ..$ ncol: int 11330
+  .. .. ..- attr(*, "class")= chr "simple_triplet_matrix"
+  .. ..@ loglikelihood  : num [1:27599] -21.24 -14.33 -5.34 -5.18 -7.01 ...
+  .. ..@ iter           : int 90
+  .. ..@ logLiks        : num(0) 
+  .. ..@ n              : int 45825
+ $ LDA_fixedVEM:Formal class 'LDA_VEM' [package "topicmodels"] with 14 slots
+  .. ..@ alpha          : num 1.67
+  .. ..@ call           : language LDA(x = tweets_dtm_reduzida, k = k, control = list(estimate.alpha = FALSE))
+  .. ..@ Dim            : int [1:2] 27599 11330
+  .. ..@ control        :Formal class 'LDA_VEMcontrol' [package "topicmodels"] with 13 slots
+  .. .. .. ..@ estimate.alpha: logi FALSE
+  .. .. .. ..@ alpha         : num 1.67
+  .. .. .. ..@ seed          : int 1626229294
+  .. .. .. ..@ verbose       : int 0
+  .. .. .. ..@ prefix        : chr "/tmp/RtmpdJoNsW/file37292d0eded4"
+  .. .. .. ..@ save          : int 0
+  .. .. .. ..@ nstart        : int 1
+  .. .. .. ..@ best          : logi TRUE
+  .. .. .. ..@ keep          : int 0
+  .. .. .. ..@ estimate.beta : logi TRUE
+  .. .. .. ..@ var           :Formal class 'OPTcontrol' [package "topicmodels"] with 2 slots
+  .. .. .. .. .. ..@ iter.max: int 500
+  .. .. .. .. .. ..@ tol     : num 1e-06
+  .. .. .. ..@ em            :Formal class 'OPTcontrol' [package "topicmodels"] with 2 slots
+  .. .. .. .. .. ..@ iter.max: int 1000
+  .. .. .. .. .. ..@ tol     : num 1e-04
+  .. .. .. ..@ initialize    : chr "random"
+  .. ..@ k              : int 30
+  .. ..@ terms          : chr [1:11330] "httpstcozagilndvlt" "mata👇" "bost" "musiqu" ...
+  .. ..@ documents      : chr [1:27599] "text1" "text2" "text3" "text6" ...
+  .. ..@ beta           : num [1:30, 1:11330] -10.2 -11.2 -10.1 -11.4 -11.1 ...
+  .. ..@ gamma          : num [1:27599, 1:30] 0.035 0.0339 0.0332 0.034 0.0335 ...
+  .. ..@ wordassignments:List of 5
+  .. .. ..$ i   : int [1:44407] 1 1 2 2 3 4 5 6 7 8 ...
+  .. .. ..$ j   : int [1:44407] 1 2 3 4 5 6 7 8 9 10 ...
+  .. .. ..$ v   : num [1:44407] 7 1 1 13 24 30 25 20 12 26 ...
+  .. .. ..$ nrow: int 27599
+  .. .. ..$ ncol: int 11330
+  .. .. ..- attr(*, "class")= chr "simple_triplet_matrix"
+  .. ..@ loglikelihood  : num [1:27599] -22.08 -14.91 -5.56 -5.46 -7.3 ...
+  .. ..@ iter           : int 3
+  .. ..@ logLiks        : num(0) 
+  .. ..@ n              : int 45825
+ $ LDA_Gibbs   :Formal class 'LDA_Gibbs' [package "topicmodels"] with 16 slots
+  .. ..@ seedwords      : NULL
+  .. ..@ z              : int [1:45825] 15 16 23 18 19 7 5 3 28 24 ...
+  .. ..@ alpha          : num 1.67
+  .. ..@ call           : language LDA(x = tweets_dtm_reduzida, k = k, method = "Gibbs", control = list(burnin = 1000,      thin = 100, iter = 1000))
+  .. ..@ Dim            : int [1:2] 27599 11330
+  .. ..@ control        :Formal class 'LDA_Gibbscontrol' [package "topicmodels"] with 14 slots
+  .. .. .. ..@ delta        : num 0.1
+  .. .. .. ..@ iter         : int 100
+  .. .. .. ..@ thin         : int 100
+  .. .. .. ..@ burnin       : int 1000
+  .. .. .. ..@ initialize   : chr "random"
+  .. .. .. ..@ alpha        : num 1.67
+  .. .. .. ..@ seed         : int NA
+  .. .. .. ..@ verbose      : int 0
+  .. .. .. ..@ prefix       : chr "/tmp/RtmpdJoNsW/file372979d4e82e"
+  .. .. .. ..@ save         : int 0
+  .. .. .. ..@ nstart       : int 1
+  .. .. .. ..@ best         : logi TRUE
+  .. .. .. ..@ keep         : int 0
+  .. .. .. ..@ estimate.beta: logi TRUE
+  .. ..@ k              : int 30
+  .. ..@ terms          : chr [1:11330] "httpstcozagilndvlt" "mata👇" "bost" "musiqu" ...
+  .. ..@ documents      : chr [1:27599] "text1" "text2" "text3" "text6" ...
+  .. ..@ beta           : num [1:30, 1:11330] -10.2 -10.2 -10.2 -10.2 -10.2 ...
+  .. ..@ gamma          : num [1:27599, 1:30] 0.0321 0.0321 0.0327 0.0327 0.0327 ...
+  .. ..@ wordassignments:List of 5
+  .. .. ..$ i   : int [1:44407] 1 1 2 2 3 4 5 6 7 8 ...
+  .. .. ..$ j   : int [1:44407] 1 2 3 4 5 6 7 8 9 10 ...
+  .. .. ..$ v   : num [1:44407] 15 16 29 18 19 7 5 3 28 24 ...
+  .. .. ..$ nrow: int 27599
+  .. .. ..$ ncol: int 11330
+  .. .. ..- attr(*, "class")= chr "simple_triplet_matrix"
+  .. ..@ loglikelihood  : num -340226
+  .. ..@ iter           : int 100
+  .. ..@ logLiks        : num(0) 
+  .. ..@ n              : int 45825
+ $ CTM         :Formal class 'CTM_VEM' [package "topicmodels"] with 16 slots
+  .. ..@ nusquared      : num [1:27599, 1:29] 0.998 0.998 0.998 0.998 0.998 ...
+  .. ..@ mu             : num [1:29] -0.00501 -0.00501 -0.00501 -0.00501 -0.00501 ...
+  .. ..@ Sigma          : num [1:29, 1:29] 9.98e-01 6.92e-07 6.92e-07 6.92e-07 6.92e-07 ...
+  .. ..@ call           : language CTM(x = tweets_dtm_reduzida, k = k, control = list(var = list(tol = 10^4),      em = list(tol = 10^-3)))
+  .. ..@ Dim            : int [1:2] 27599 11330
+  .. ..@ control        :Formal class 'CTM_VEMcontrol' [package "topicmodels"] with 12 slots
+  .. .. .. ..@ cg           :Formal class 'OPTcontrol' [package "topicmodels"] with 2 slots
+  .. .. .. .. .. ..@ iter.max: int 500
+  .. .. .. .. .. ..@ tol     : num 1e-05
+  .. .. .. ..@ seed         : int 1626229309
+  .. .. .. ..@ verbose      : int 0
+  .. .. .. ..@ prefix       : chr "/tmp/RtmpdJoNsW/file37296287e6c7"
+  .. .. .. ..@ save         : int 0
+  .. .. .. ..@ nstart       : int 1
+  .. .. .. ..@ best         : logi TRUE
+  .. .. .. ..@ keep         : int 0
+  .. .. .. ..@ estimate.beta: logi TRUE
+  .. .. .. ..@ var          :Formal class 'OPTcontrol' [package "topicmodels"] with 2 slots
+  .. .. .. .. .. ..@ iter.max: int 500
+  .. .. .. .. .. ..@ tol     : num 10000
+  .. .. .. ..@ em           :Formal class 'OPTcontrol' [package "topicmodels"] with 2 slots
+  .. .. .. .. .. ..@ iter.max: int 1000
+  .. .. .. .. .. ..@ tol     : num 0.001
+  .. .. .. ..@ initialize   : chr "rand"
+  .. .. .. ..$ shrinkage.covariance: logi FALSE
+  .. ..@ k              : int 30
+  .. ..@ terms          : chr [1:11330] "httpstcozagilndvlt" "mata👇" "bost" "musiqu" ...
+  .. ..@ documents      : chr [1:27599] "text1" "text2" "text3" "text6" ...
+  .. ..@ beta           : num [1:30, 1:11330] -10.4 -10.3 -10.2 -10.3 -10.4 ...
+  .. ..@ gamma          : num [1:27599, 1:30] 0.0333 0.0333 0.0333 0.0333 0.0333 ...
+  .. ..@ wordassignments:List of 5
+  .. .. ..$ i   : int [1:44407] 1 1 2 2 3 4 5 6 7 8 ...
+  .. .. ..$ j   : int [1:44407] 1 2 3 4 5 6 7 8 9 10 ...
+  .. .. ..$ v   : num [1:44407] 8 24 12 16 29 3 25 11 9 2 ...
+  .. .. ..$ nrow: int 27599
+  .. .. ..$ ncol: int 11330
+  .. .. ..- attr(*, "class")= chr "simple_triplet_matrix"
+  .. ..@ loglikelihood  : num [1:27599] -22.44 -15.27 -5.73 -5.64 -7.48 ...
+  .. ..@ iter           : int 3
+  .. ..@ logLiks        : num(0) 
+  .. ..@ n              : int 45825
